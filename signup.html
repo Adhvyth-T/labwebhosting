@@ -96,7 +96,7 @@
                 alert('Enter a valid Email in the correct format');
             }
              var password=document.getElementById("password").value
-             const passpattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])[a-zA-Z!@#$%^&*]{6,}$/;
+             const passpattern = /(?=.*[@#$%^&*()<>?/\|~`])(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}/;
             var pass=document.getElementById("password").value;
             if (!passpattern.test(password)) {
                 alert('Enter a valid password in the correct format');
