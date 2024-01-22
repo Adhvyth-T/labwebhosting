@@ -104,11 +104,6 @@
             if (passpattern.test(password) && pattern.test(email)&&b){
                 alert("successfully signed up");
                 document.getElementById("form").submit();
-                
-                 var urlToOpen = 'login.html';
-
-    
-    window.location.href=urlToOpen;
             }
             var phone = document.getElementById("phone").value;
         const phonePattern = /\d{10}$/;
